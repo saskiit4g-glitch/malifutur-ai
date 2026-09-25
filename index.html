@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MaliFutur.ai — Plateforme éducative gratuite pour préparer les jeunes au CIAR-Mali : Python, IA et Robotique.">
+<title>MaliFutur.ai — Résumer l'avenir du Mali par la technologie</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="logo" aria-label="MaliFutur.ai — accueil">
+      <svg width="34" height="34" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" fill="#14B866"/>
+        <path d="M10 20h28v4H10z" fill="#FCD116"/>
+        <path d="M24 22l6 12h-12z" fill="#CE1126"/>
+      </svg>
+      <span>MaliFutur<span class="dot">.ai</span></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#cours">Cours</a>
+      <a href="#tuteur">Tuteur IA</a>
+      <a href="#apropos">À propos</a>
+      <a href="#cours" class="btn-nav">Commencer</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="badge">🚀 100% gratuit · Optimisé mobile</span>
+      <h1>Résumer l'avenir du Mali<br><span class="grad">par la technologie</span></h1>
+      <p>Des cours simplifiés de <strong>Python</strong>, d'<strong>Intelligence Artificielle</strong> et de <strong>Robotique</strong> — conçus pour préparer la jeunesse malienne à intégrer le <strong>Centre Malien d'Intelligence Artificielle et de Robotique (CIAR-Mali)</strong>.</p>
+      <div class="hero-actions">
+        <a href="#cours" class="btn btn-primary">📚 Voir les cours</a>
+        <a href="#tuteur" class="btn btn-ghost">🤖 Poser une question</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>3</strong><span>parcours</span></li>
+        <li><strong>0 FCFA</strong><span>pour toujours</span></li>
+        <li><strong>📶</strong><span>faible data</span></li>
+      </ul>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="chip float1">🐍 Python</div>
+      <div class="chip float2">🧠 IA</div>
+      <div class="chip float3">🤖 Robotique</div>
+      <div class="orb"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COURS ===== -->
+<section class="section" id="cours">
+  <div class="container">
+    <h2 class="section-title">📚 Nos parcours de formation</h2>
+    <p class="section-sub">Progression pas à pas, en français simple, avec exercices interactifs.</p>
+    <div class="cards" id="coursesGrid"></div>
+  </div>
+</section>
+
+<!-- ===== TUTEUR IA (DEMO) ===== -->
+<section class="section alt" id="tuteur">
+  <div class="container">
+    <h2 class="section-title">🤖 Tuteur virtuel intelligent</h2>
+    <p class="section-sub">Pose ta question sur la technologie — démonstration hors-ligne (aucune donnée mobile consommée).</p>
+    <div class="chatbox" role="dialog" aria-label="Chat avec le tuteur IA">
+      <div class="chat-log" id="chatLog" aria-live="polite"></div>
+      <form class="chat-form" id="chatForm">
+        <input type="text" id="chatInput" placeholder="Ex. : C'est quoi Python ?" autocomplete="off" required>
+        <button type="submit" class="btn btn-primary" aria-label="Envoyer">➤</button>
+      </form>
+      <p class="chat-hint">💡 Essaie : <em>Python</em>, <em>IA</em>, <em>robot</em>, <em>CIAR</em>, <em>internet</em>…</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DATA-SAVING ===== -->
+<section class="section" id="data">
+  <div class="container split">
+    <div>
+      <h2 class="section-title left">📶 Conçu pour la faible connectivité</h2>
+      <ul class="checklist">
+        <li>⚡ Page unique &lt; <strong>15 Ko</strong> — se charge en 2G</li>
+        <li>🚫 Zéro framework, zéro image lourde, zéro pisteurs</li>
+        <li>🌙 Mode sombre natif pour économiser la batterie</li>
+        <li>🤖 Le tuteur fonctionne <strong>hors-ligne</strong></li>
+      </ul>
+    </div>
+    <div class="speed-card">
+      <div class="speed-num" id="speedNum">0<small> Ko</small></div>
+      <p>poids total téléchargé</p>
+      <button class="btn btn-ghost" id="themeBtn">🌙 Basculer thème sombre</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== À PROPOS ===== -->
+<section class="section alt" id="apropos">
+  <div class="container narrow center">
+    <h2 class="section-title">🎯 Notre mission</h2>
+    <p>Démocratiser l'accès à l'IA et à la robotique au Mali. Chaque jeune, partout, avec un simple téléphone, peut apprendre les compétences du futur et préparer son admission au <strong>CIAR-Mali</strong> — le Centre Malien d'Intelligence Artificielle et de Robotique.</p>
+    <a class="btn btn-primary big" href="#cours">Commencer maintenant — c'est gratuit</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 MaliFutur.ai — Éduquer, c'est construire. 🇲🇱</p>
+    <p class="small">Fait avec ❤️ pour la jeunesse malienne.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
